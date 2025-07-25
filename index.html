@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleQeurie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
@@ -13,17 +15,35 @@
     <main>
         <section id="login">
             <div id="imagem">
-                Foto
+                <!-- IMAGEM VEM AQUI LA N0 CSS -->
             </div>
 
             <div id="formulario">
-                Formulario
 
+                <!-- FORMULARIO VEM AQUI LA NO CSS -->
                 <h1>Login</h1>
                 <p>seja bem vindo , faca login para acessar sua conta </p>
 
-                <form action="cadastro.php" method="post">
+                <form action="cadastro.php" method="post" autocomplete="on">
 
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" id="iemail" placeholder="seu email" autocomplete="email" required
+                            maxlength="30">
+                        <label for="iemail">login</label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" id="isenha" placeholder="seu password" autocomplete="current-password"
+                            required min="10">
+                        <label for="isenha">Senha</label>
+
+                    </div>
+
+                    <input type="submit" value="entrar">
+                    <a href="">esquecia senha <span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
